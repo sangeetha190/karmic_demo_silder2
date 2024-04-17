@@ -3,19 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <title>Karmic</title>
+    <link rel="stylesheet" href="./css/greensock.css" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <style>
       html,
       body {
@@ -62,16 +54,44 @@
       .img-fluid {
         filter: drop-shadow(7px 3px 12px black);
       }
+      .blurred-box {
+        position: relative;
+        /* width: 400px; */
+        /* height: 500px; */
+        border-radius: 2px;
+        overflow: hidden;
+        /* margin-top: 200px; */
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        padding: 10px;
+        width: 400px;
+        height: 400px;
+        /* background: rgba(189, 181, 181, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px); */
+        border: 1px solid rgba(255, 255, 255, 0.085);
+      }
+      .w-85 {
+        width: 85%;
+      }
     </style>
   </head>
   <body>
     <section class="description panel position-relative">
       <video autoplay muted loop class="banner-video" class="position-relative">
-        <source src="./KB.mp4" type="video/mp4" class="position-relative" />
+        <source
+          src="./image/KB.mp4"
+          type="video/mp4"
+          class="position-relative"
+        />
       </video>
       <div
         class="img-container"
-        style="background-color: rgba(19, 19, 19, 0.6)"
+        style="background-color: rgba(19, 19, 19, 0.35)"
       ></div>
       <div style="position: absolute">
         <div
@@ -88,12 +108,16 @@
       <section
         class="panel"
         style="
-          background-image: url(./bg-color.jpg);
+          background-image: url(./image/bg_red-1.JPG);
           background-position: left;
           width: 100%;
           background-size: cover;
         "
       >
+        <div
+          class="img-container"
+          style="background-color: rgba(19, 19, 19, 0.6)"
+        ></div>
         <div class="container">
           <div class="row align-items-center">
             <div
@@ -118,7 +142,10 @@
               </button>
             </div>
             <div class="col-sm-6 order-1 order-sm-2 right-side">
-              <img src="./Karmic Bag 04.png" class="img-fluid" alt="" />
+              <!-- <img src="./Karmic Bag 04.png" class="img-fluid" alt="" /> -->
+              <div class="blurred-box pt-0">
+                <img src="./image/Hand bags 3.png" class="img-fluid" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -126,12 +153,16 @@
       <section
         class="panel"
         style="
-          background-image: url(./bg-color2.jpg);
+          background-image: url(./image/bg_2.JPG);
           background-position: left;
           width: 100%;
           background-size: cover;
         "
       >
+        <div
+          class="img-container"
+          style="background-color: rgba(19, 19, 19, 0.6)"
+        ></div>
         <div class="container">
           <div class="row align-items-center">
             <div
@@ -157,7 +188,13 @@
             <div
               class="col-sm-6 order-1 order-sm-2 animated-contentright right-side"
             >
-              <img src="./karmic 01.png" class="img-fluid" alt="" />
+              <div class="blurred-box">
+                <img
+                  src="./image/karmic 01.png"
+                  class="img-fluid w-100"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -166,12 +203,16 @@
       <section
         class="panel"
         style="
-          background-image: url(./bg-color3.jpg);
+          background-image: url(./image/bg_3.JPG);
           background-position: left;
           width: 100%;
           background-size: cover;
         "
       >
+        <div
+          class="img-container"
+          style="background-color: rgba(19, 19, 19, 0.6)"
+        ></div>
         <div class="container">
           <div class="row align-items-center">
             <div
@@ -198,18 +239,24 @@
             <div
               class="col-sm-6 order-1 order-sm-2 animated-contentright right-side"
             >
-              <img src="./Karmic Bag 10_01.png" class="img-fluid" alt="" width="88%" />
+              <div class="blurred-box">
+                <img
+                  src="./image/Karmic Bag 10_01.png"
+                  class="img-fluid w-85"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
   </body>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-  <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/TextPlugin.min.js"></script>
+  <script src="./js/scroll1.js"></script>
+  <script src="./js/scroll2.js"></script>
+  <script src="./js/scroll3.js"></script>
+  <script src="./js/scroll4.js"></script>
+  <script src="./js/scroll5.js"></script>
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
@@ -281,7 +328,7 @@
       leftSideBoxes.forEach((box, i) => {
         const anim = gsap.fromTo(
           box,
-          { opacity: 0.2, x: -100 },
+          { opacity: 1, x: -100 },
           { opacity: 1, x: 0 }
         );
         ScrollTrigger.create({
@@ -296,7 +343,7 @@
       rightSideBoxes.forEach((box, i) => {
         const anim = gsap.fromTo(
           box,
-          { opacity: 0.2, x: 300 },
+          { opacity: 1, x: 300 },
           { opacity: 1, x: 0 }
         );
         ScrollTrigger.create({
